@@ -11,7 +11,7 @@ btntrans.addEventListener("click",()=>{
  var txt=txtinp.innerHTML;
  fetch(curl(txt)).then(response => response.json())
  .then(json=>{
-   var ti=json.content.translated;
+   var ti=json.contents.translated;
    txtout.innerText=ti;
  })
  .catch(errorhandler=>{
