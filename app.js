@@ -8,7 +8,7 @@ return url+"?"+"text="+txt;
 }
 btntrans.addEventListener("click",()=>{
  
- var txt=txtinp.innerHTML;
+ var txt=txtinp.value;
  fetch(curl(txt)).then(response => response.json())
  .then(json=>{
    var ti=json.contents.translated;
